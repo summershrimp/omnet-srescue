@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<!DOCTYPE movements SYSTEM "../inetmanet/etc/TurtleMobility.dtd">
+<movements>
+    <movement id="0">
+        <set speed="10" x="460" y="1600" angle="270"/>
+        <wait t="20"/>
+        
+        <repeat n="4">
+            <forward d="1200"/>
+            <turn angle="180"/>
+        </repeat>
+    </movement>
+    <movement id="1">
+        <set speed="10" x="700" y="1600" angle="270"/>
+        <wait t="20"/>
+        
+        <repeat n="4">
+            <forward d="1200"/>
+            <turn angle="180"/>
+        </repeat>
+    </movement>
+    <movement id="2">
+        <set speed="10" x="940" y="1600" angle="270"/>
+        <wait t="20"/>
+        
+        <repeat n="2">
+            <forward d="500"/>
+            <turn angle="300"/>
+            <forward d="200" t="10"/>
+            <turn angle="120"/>
+            <forward d="200" t="10"/>
+            <turn angle="300"/>
+            <forward d="500"/>
+            <turn angle="180"/>
+            
+            <forward d="500"/>
+            <turn angle="60"/>
+            <forward d="200" t="10"/>
+            <turn angle="240"/>
+            <forward d="200" t="10"/>
+            <turn angle="60"/>
+            <forward d="500"/>
+            <turn angle="180"/>
+            
+        </repeat>
+    </movement>
+    <movement id="3">
+        <set speed="10" x="1180" y="1600" angle="270"/>
+        <wait t="20"/>
+        
+        <repeat n="4">
+            <forward d="1200"/>
+            <turn angle="180"/>
+        </repeat>
+    </movement>
+    <movement id="4">
+        <set speed="10" x="1320" y="1600" angle="270"/>
+        <wait t="20"/>
+        
+        <repeat n="4">
+            <forward d="1200"/>
+            <turn angle="180"/>
+        </repeat>
+    </movement>
+    
+</movements>

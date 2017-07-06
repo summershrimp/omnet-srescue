@@ -36,6 +36,17 @@ import uavnet.node.UAVNode;
 import inet.physicallayer.ieee80211.packetlevel.Ieee80211ScalarRadioMedium;
 import inet.visualizer.contract.IIntegratedVisualizer;
 
+import ned.DatarateChannel;
+
+//channel accessChannel extends DatarateChannel
+//{
+//    datarate = default(1 Gbps);
+//    delay = default(0.1ms);
+//    ber = default(0);
+//    per = default(0);
+//    @display("ls=blue,5");
+//}
+
 network UAVNetwork
 {
     parameters:
@@ -58,10 +69,16 @@ network UAVNetwork
         host[numHosts]: UAVNode {
             parameters:
                 @display("r=,,#707070;p=250,60");
+//            gates:
+//                ethg[1];
         }
         
         repeater[numRepeater]: UAVNode {
             parameters:
                 @display("r=,,#707070;p=250,120");
         }
+        
+//    connections:
+//        host[0].ethg[0] <--> accessChannel <--> host[1].ethg[0];
+         
 }
